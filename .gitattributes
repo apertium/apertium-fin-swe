@@ -1,0 +1,25 @@
+* text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/TODO -text
+/apertium-fin-swe.fin-swe.dix -text
+/apertium-fin-swe.fin-swe.lrx -text
+/apertium-fin-swe.fin-swe.rlx -text
+/apertium-fin-swe.fin-swe.t1x -text svneol=unset#application/xml
+/apertium-fin-swe.fin-swe.t2x -text svneol=unset#application/xml
+/apertium-fin-swe.fin-swe.t3x -text svneol=unset#application/xml
+/apertium-fin-swe.swe-fin.lrx -text
+/apertium-fin-swe.swe-fin.rlx -text
+/apertium-fin-swe.swe-fin.t1x -text svneol=unset#application/xml
+/apertium-fin-swe.swe-fin.t2x -text svneol=unset#application/xml
+/apertium-fin-swe.swe-fin.t3x -text svneol=unset#application/xml
+/apertium-fin-swe.swe.lexc -text
+/apertium-fin-swe.swe.twol -text
+/configure.ac -text
+dev/debug2dixesandlexces.bash -text
+texts/story.fin.txt -text
+texts/story.swe.txt -text
+texts/undhr.fin.txt -text
