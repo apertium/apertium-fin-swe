@@ -23,6 +23,7 @@
 dev/debug2dixesandlexces.bash -text
 /fin-swe.prob -text svneol=unset#unset
 /modes.xml -text svneol=unset#application/xml
+/swe-fin.prob -text svneol=unset#unset
 texts/story.fin.txt -text
 texts/story.swe.txt -text
 texts/undhr.fin.txt -text
