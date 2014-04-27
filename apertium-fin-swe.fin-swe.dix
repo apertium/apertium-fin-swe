@@ -46,6 +46,9 @@
     <sdef n="abbr" 	c="eviation"/> 
     <sdef n="nt"    c="gender N"/>
     <sdef n="ut"    c="gender U"/>
+    <sdef n="ref"    c="reference"/>
+    <sdef n="pl"    c="plural"/>
+    <sdef n="un"    c="undecided"/>
 
   </sdefs>
   <section id="main" type="standard">
@@ -374,7 +377,7 @@
     <e><p><l>taas<s n="adv"/>!</l><r>igen<s n="adv"/></r></p></e>
     <e><p><l>tänään<s n="adv"/></l><r>idag<s n="adv"/></r></p></e>
     <e><p><l>ulkona<s n="adv"/></l><r>ut<s n="pr"/></r></p></e>
-    <e><p><l>yhdessä<s n="adv"/></l><r>varandra<s n="adv"/></r></p></e>
+    <e><p><l>yhdessä<s n="adv"/></l><r>varandra<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
     <e><p><l>kaikkialle<s n="adv"/></l><r>över<b/>allt<s n="adv"/></r></p></e>
     <e><p><l>taas<s n="adv"/></l><r>igen<s n="adv"/></r></p></e>
     <e><p><l>tietenkään<s n="adv"/></l><r>naturligtvis<b/>inte<s n="adv"/></r></p></e>

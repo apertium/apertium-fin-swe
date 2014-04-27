@@ -18,6 +18,7 @@
 /apertium-fin-swe.swe-fin.t3x -text svneol=unset#application/xml
 /configure.ac -text
 dev/debug2dixesandlexces.bash -text
+/modes.xml -text svneol=unset#application/xml
 texts/story.fin.txt -text
 texts/story.swe.txt -text
 texts/undhr.fin.txt -text
