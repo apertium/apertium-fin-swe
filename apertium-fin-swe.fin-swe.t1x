@@ -111,6 +111,7 @@
   <section-def-attrs>
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
+      <attr-item tags="vbser"/>
       <attr-item tags="vaux"/>
     </def-attr>
     <def-attr n="voice">
@@ -589,6 +590,7 @@
             <clip pos="3" side="tl" part="lem"/> <!-- know --> 
             <clip pos="3" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="3" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="3" side="tl" part="voice"/> <!-- vblex -->
             <!--<clip pos="1" side="tl" part="person"/> <! p3 > 
             <clip pos="1" side="tl" part="a_nbr"/> <! sg -->
           </lu>
@@ -675,6 +677,7 @@
             <clip pos="2" side="tl" part="lem"/> <!-- know --> 
             <clip pos="2" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="2" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="2" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           <b pos="1"/> <!-- space character between words -->
           <lu>
@@ -725,6 +728,7 @@
             <clip pos="2" side="tl" part="lem"/> <!-- know --> 
             <clip pos="2" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="2" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="2" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           <b pos="1"/> <!-- space character between words -->
           <lu>
@@ -766,6 +770,7 @@
             <clip pos="3" side="tl" part="lem"/> <!-- know --> 
             <clip pos="3" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="3" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="3" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           <b pos="1"/> <!-- space character between words -->
           <lu>
@@ -813,6 +818,7 @@
             <clip pos="2" side="tl" part="lem"/> <!-- know --> 
             <clip pos="2" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="2" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="2" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           <b pos="1"/> <!-- space character between words -->
           <lu>
@@ -868,6 +874,7 @@
             <clip pos="1" side="tl" part="lem"/> <!-- know --> 
             <clip pos="1" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="1" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="1" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           </chunk>
         </out>      
@@ -892,6 +899,7 @@
             <clip pos="1" side="tl" part="lem"/> <!-- know --> 
             <clip pos="1" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="1" side="tl" part="moodtense"/> <!-- past -->
+            <clip pos="1" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           </chunk>
         </out>      
@@ -929,6 +937,7 @@
             <clip pos="1" side="tl" part="lem"/> <!-- know --> 
             <clip pos="1" side="tl" part="a_verb"/> <!-- vblex-->
             <clip pos="1" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="1" side="tl" part="voice"/> <!-- vblex-->
           </lu>
           </chunk>
         </out>      
@@ -970,6 +979,7 @@
             <clip pos="1" side="tl" part="lem"/> <!-- know --> 
             <clip pos="1" side="tl" part="a_verb"/> <!-- vblex -->
             <clip pos="1" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="1" side="tl" part="voice"/> <!-- vblex -->
           </lu>
           </chunk>
         </out>      
@@ -1063,6 +1073,7 @@
                 <clip pos="2" side="tl" part="lem"/>
                 <clip pos="2" side="tl" part="a_verb"/> <!-- vblex -->
                 <clip pos="2" side="tl" part="moodtense"/> <!-- pres -->
+                <clip pos="2" side="tl" part="voice"/> <!-- vblex -->
             </lu>
           </chunk>
         </out>
