@@ -25,6 +25,7 @@
     <sdef n="lpar" 	c=""/> 
     <sdef n="p2" 	c=""/> 
     <sdef n="ger" 	c=""/> 
+    <sdef n="top" 	c=""/> 
     <sdef n="subst" 	c=""/> 
     <sdef n="nom" 	c=""/> 
     <sdef n="sg" 	c=""/> 
@@ -58,7 +59,7 @@
     <!-- propers -->
     
     <e><p><l>Aadam<s n="np"/></l><r>Adam<s n="np"/></r></p></e>
-    <e><p><l>Aasia<s n="np"/></l><r>Asia<s n="np"/></r></p></e>
+    <e><p><l>Aasia<s n="np"/></l><r>Asia<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Acapulco<s n="np"/></l><r>Acapulco<s n="np"/></r></p></e>
     <e><p><l>Acer<s n="np"/></l><r>Acer<s n="np"/></r></p></e>
     <e><p><l>Ahvenanmaa<s n="np"/></l><r>Åland<s n="np"/></r></p></e>
@@ -66,12 +67,12 @@
     <e><p><l>Berliini<s n="np"/></l><r>Berlin<s n="np"/></r></p></e>
     <e><p><l>de<s n="np"/></l><r>de<s n="np"/></r></p></e>
     <e><p><l>Eeden<s n="np"/></l><r>Eden<s n="np"/></r></p></e>
-    <e><p><l>Helsinki<s n="np"/></l><r>Helsingfors<s n="np"/></r></p></e>
+    <e><p><l>Helsinki<s n="np"/></l><r>Helsingfors<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Jumala<s n="np"/></l><r>Gud<s n="np"/></r></p></e>
-    <e><p><l>Tukholma<s n="np"/></l><r>Stockholm<s n="np"/></r></p></e>
+    <e><p><l>Tukholma<s n="np"/></l><r>Stockholm<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Van<s n="np"/></l><r>Van<s n="np"/></r></p></e>
-    <e><p><l>Mari<s n="n"/></l><r>Mari<s n="np"/></r></p></e>
-    <e><p><l>Jaakko<s n="n"/></l><r>Jaakko<s n="np"/></r></p></e>
+    <e><p><l>Mari<s n="np"/></l><r>Mari<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Jaakko<s n="np"/></l><r>Jaakko<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 
     <!-- nums-->
 
@@ -305,7 +306,6 @@
     <e><p><l>edessä<s n="post"/></l><r>framför<s n="pr"/></r></p></e>
     <e><p><l>ennen<s n="post"/></l><r>före<s n="pr"/></r></p></e>
     <e><p><l>ilman<s n="pr"/></l><r>utan<s n="pr"/></r></p></e>
-    <e><p><l>Jaakko<s n="np"/></l><r>Jaakko<s n="np"/></r></p></e>
     <e><p><l>kanssa<s n="post"/></l><r>med<s n="pr"/></r></p></e>
     <e><p><l>kautta<s n="post"/></l><r>via<s n="pr"/></r></p></e>
     <e><p><l>likelle<s n="pr"/></l><r>närä<s n="pr"/></r></p></e>
