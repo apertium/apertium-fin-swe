@@ -10,8 +10,8 @@ PREFIX2=$(LANG2)-$(LANG1)
 
 BASENAME=apertium-$(PREFIX1)
 
-TARGETS_MONOLING=$(PREFIX1).automorf.hfst $(PREFIX1).autogen.hfst \
-				 $(PREFIX2).automorf.hfst $(PREFIX2).autogen.hfst 
+TARGETS_MONOLING=$(PREFIX1).automorf.hfst $(PREFIX1).autogen.bin \
+				 $(PREFIX2).automorf.bin $(PREFIX2).autogen.hfst 
 TARGETS_TRANSFER=$(PREFIX2).t1x.bin $(PREFIX1).t1x.bin  \
 				 $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 				 $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
@@ -50,45 +50,18 @@ $(PREFIX2).autogen.hfst: $(AP_LIB1)/$(LANG1).autogen.hfst
 ## swe transducer
 ###############################################################################
 
-.deps/$(LANG2).twol.hfst: $(BASENAME).$(LANG2).twol
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc $< -o $@
- 
-.deps/$(LANG2).RL.lexc: $(BASENAME).$(LANG2).lexc
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	cat $< | grep -v 'Dir/LR' > $@
- 
-.deps/$(LANG2).LR.lexc: $(BASENAME).$(LANG2).lexc
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	cat $< | grep -v 'Dir/RL' > $@
+$(PREFIX2).automorf.hfst: $(AP_LIB2)/$(LANG2).automorf.hfst
+	cp -v -f $< $@
 
-.deps/$(LANG2).RL.lexc.hfst: .deps/$(LANG2).RL.lexc
-	hfst-lexc --format foma $< -o $@
+$(PREFIX2).automorf.bin: $(AP_LIB2)/$(LANG2).automorf.bin
+	cp -v -f $< $@
 
-.deps/$(LANG2).LR.lexc.hfst: .deps/$(LANG2).LR.lexc
-	hfst-lexc --format foma $< -o $@
+$(PREFIX1).autogen.bin: $(AP_LIB2)/$(LANG2).autogen.bin
+	cp -v -f $< $@
 
-.deps/$(LANG2).RL.hfst: .deps/$(LANG2).RL.lexc.hfst .deps/$(LANG2).twol.hfst
-	hfst-compose-intersect -1 .deps/$(LANG2).RL.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
+$(PREFIX1).autogen.hfst: $(AP_LIB2)/$(LANG2).autogen.hfst
+	cp -v -f $< $@
 
-.deps/$(LANG2).LR.hfst: .deps/$(LANG2).LR.lexc.hfst .deps/$(LANG2).twol.hfst
-	hfst-compose-intersect -1 .deps/$(LANG2).LR.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
-
-$(PREFIX1).autogen.hfst: .deps/$(LANG2).RL.hfst
-	hfst-fst2fst -O $< -o $@
-
-$(PREFIX2).automorf.hfst: .deps/$(LANG2).LR.hfst
-	hfst-invert $< | hfst-fst2fst -O -o $@
-
-###############################################################################
-## Debugging transducers (for testvoc)
-###############################################################################
-
-.deps/$(LANG2).LR-debug.hfst: $(BASENAME).$(LANG2).lexc
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG2).LR-debug.lexc
-	hfst-lexc --format foma .deps/$(LANG2).LR-debug.lexc -o .deps/$(LANG2).LR-debug.lexc.hfst
-	hfst-compose-intersect -1 .deps/$(LANG2).LR-debug.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
 
 ###############################################################################
 ## Bilingual dictionaries
@@ -194,8 +167,8 @@ apertium_fin_swedir=$(prefix)/share/apertium/$(BASENAME)/
 
 apertium_fin_swe_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
                     $(PREFIX1).prob $(PREFIX2).prob \
-		    $(PREFIX1).autogen.hfst $(PREFIX2).autogen.hfst \
-		    $(PREFIX1).automorf.hfst $(PREFIX2).automorf.hfst \
+		    $(PREFIX1).autogen.bin $(PREFIX2).autogen.hfst \
+		    $(PREFIX1).automorf.hfst $(PREFIX2).automorf.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
 		    $(PREFIX1).t3x.bin $(PREFIX2).t3x.bin \

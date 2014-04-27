@@ -16,8 +16,6 @@
 /apertium-fin-swe.swe-fin.t1x -text svneol=unset#application/xml
 /apertium-fin-swe.swe-fin.t2x -text svneol=unset#application/xml
 /apertium-fin-swe.swe-fin.t3x -text svneol=unset#application/xml
-/apertium-fin-swe.swe.lexc -text
-/apertium-fin-swe.swe.twol -text
 /configure.ac -text
 dev/debug2dixesandlexces.bash -text
 texts/story.fin.txt -text

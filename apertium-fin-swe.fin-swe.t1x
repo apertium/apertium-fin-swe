@@ -1149,6 +1149,7 @@
         <call-macro n="case-handler1"> 
           <with-param pos="2"/>
         </call-macro>
+        <let><clip pos="2" side="tl" part="a_poss"/><lit v=""/></let>
         <out>
           <chunk name="REALGEN" case="caseFirstWord">
             <tags>
