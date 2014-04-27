@@ -28,6 +28,7 @@
     <sdef n="subst" 	c=""/> 
     <sdef n="nom" 	c=""/> 
     <sdef n="sg" 	c=""/> 
+    <sdef n="sp" 	c=""/> 
     <sdef n="rpar" 	c=""/> 
     <sdef n="lquot" 	c=""/> 
     <sdef n="rquot" 	c=""/> 
@@ -224,7 +225,8 @@
     <e><p><l>pöytä<s n="n"/></l><r>bord<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>silmä<s n="n"/></l><r>öga<s n="n"/></r></p></e>
     <e><p><l>sisko<s n="n"/></l><r>syster<s n="n"/><s n="ut"/></r></p></e>
-    <e><p><l>sää<s n="n"/></l><r>väder<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>sää<s n="n"/><s n="sg"/></l><r>väder<s n="n"/><s n="nt"/><s n="sp"/></r></p></e>
+    <e><p><l>sää<s n="n"/><s n="pl"/></l><r>väder<s n="n"/><s n="nt"/><s n="sp"/></r></p></e>
     <e><p><l>talo<s n="n"/></l><r>hus<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>tuoli<s n="n"/></l><r>stol<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>tyttö<s n="n"/></l><r>flicka<s n="n"/><s n="ut"/></r></p></e>

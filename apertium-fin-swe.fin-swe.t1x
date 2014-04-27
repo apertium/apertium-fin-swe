@@ -155,6 +155,7 @@
       <attr-item tags="num"/>
     </def-attr>
     <def-attr n="a_nbr">
+      <attr-item tags="sp"/>
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
     </def-attr>
