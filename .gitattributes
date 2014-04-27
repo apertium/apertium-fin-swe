@@ -16,6 +16,7 @@
 /apertium-fin-swe.swe-fin.t1x -text svneol=unset#application/xml
 /apertium-fin-swe.swe-fin.t2x -text svneol=unset#application/xml
 /apertium-fin-swe.swe-fin.t3x -text svneol=unset#application/xml
+/autogen.sh -text
 /configure.ac -text
 dev/debug2dixesandlexces.bash -text
 /modes.xml -text svneol=unset#application/xml
