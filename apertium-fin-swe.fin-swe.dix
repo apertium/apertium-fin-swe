@@ -12,6 +12,7 @@
     <sdef n="ij"  c=""/>
     <sdef n="adv"  c="Наречие"/>
     <sdef n="sint"  c="-ø -er -est"/>
+    <sdef n="vbmod"  c="Глагол 'быть'"/>
     <sdef n="vbser"  c="Глагол 'быть'"/>
     <sdef n="sent"  c="juttu"/>
     <sdef n="cm"  c="senttimetri"/>
@@ -244,7 +245,7 @@
     
     <e><p><l>ei<s n="vaux"/></l><r>inte<s n="adv"/></r></p></e>
     <e><p><l>täytyä<s n="vaux"/></l><r>mäste<s n="vaux"/></r></p></e>
-    <e><p><l>voida<s n="vaux"/></l><r>kunna<s n="vblex"/></r></p></e>
+    <e><p><l>voida<s n="vaux"/></l><r>kunna<s n="vbmod"/></r></p></e>
 
     <!-- lexical verbs = the rest -->
     <e><p><l>ajatella<s n="vblex"/></l><r>tänka<s n="vblex"/></r></p></e>
@@ -269,10 +270,10 @@
     <e><p><l>nukkua<s n="vblex"/></l><r>sova<s n="vblex"/></r></p></e>
     <e><p><l>nähdä<s n="vblex"/></l><r>se<s n="vblex"/></r></p></e>
     <e><p><l>olla<s n="vblex"/></l><r>vara<s n="vbser"/></r></p></e>
-    <e><p><l>osata<s n="vblex"/></l><r>kunna<s n="vblex"/></r></p></e>
+    <e><p><l>osata<s n="vblex"/></l><r>kunna<s n="vbmod"/></r></p></e>
     <e><p><l>pitää<s n="vblex"/></l><r>tycka<s n="vblex"/></r></p></e>
     <e><p><l>puhua<s n="vblex"/></l><r>tala<s n="vblex"/></r></p></e>
-    <e><p><l>pystyä<s n="vblex"/></l><r>kunna<s n="vblex"/></r></p></e>
+    <e><p><l>pystyä<s n="vblex"/></l><r>kunna<s n="vbmod"/></r></p></e>
     <e><p><l>saada<s n="vblex"/></l><r>ha<s n="vblex"/></r></p></e>
     <e><p><l>sanoa<s n="vblex"/></l><r>säga<s n="vblex"/></r></p></e>
     <e><p><l>syödä<s n="vblex"/></l><r>äta<s n="vblex"/></r></p></e>
@@ -285,7 +286,7 @@
 
     <!-- adjectives -->
     <e><p><l>hauska<s n="adj"/></l><r>trevlig<s n="adj"/></r></p></e>
-    <e><p><l>hyvä<s n="adj"/></l><r>bra<s n="adj"/></r></p></e>
+    <e><p><l>hyvä<s n="adj"/></l><r>bra<s n="adv"/></r></p></e>
     <e><p><l>hyvä<s n="adj"/></l><r>god<s n="adj"/></r></p></e>
     <e><p><l>iloinen<s n="adj"/></l><r>glad<s n="adj"/></r></p></e>
     <e><p><l>iso<s n="adj"/></l><r>stor<s n="adj"/></r></p></e>
