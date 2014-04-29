@@ -88,11 +88,7 @@
     </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
-      <cat-item tags="n.*.*"/>
-      <cat-item tags="n.*.*.*"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="np.*.*"/>
-      <cat-item tags="np.*.*.*"/>
     </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
@@ -264,18 +260,18 @@
     </def-macro>
 
     <def-macro n="def-handler1" npar="1">
+        <let><var n="definiteness"/><lit-tag v="ind"/></let>
         <choose>
             <when>
                 <test>
-                    <equal><clip pos="1" side="tl" part="a_noun"/><lit-tag v="np"/></equal>
+                    <or>
+                      <equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></equal>
+                      <equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np.ant"/></equal>
+                      <equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np.ant.f"/></equal>
+                      <equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np.ant.m"/></equal>
+                    </or>
                 </test>
-                <let><clip pos="1" side="tl" part="definiteness"/><lit v=""/></let>
-            </when>
-            <when>
-                <test>
-                    <equal><clip pos="1" side="tl" part="a_noun"/><lit-tag v="n"/></equal>
-                </test>
-                <let><clip pos="1" side="tl" part="definiteness"/><lit v="ind"/></let>
+                <let><var n="definiteness"/><lit v=""/></let>
             </when>
         </choose>
     </def-macro>
@@ -417,16 +413,6 @@
       </action>
     </rule>
 
-
-
-
-
-
-
-
-
-
-
     <rule comment="REGLA: NOM">
       <pattern>
         <pattern-item n="nom"/>
@@ -452,7 +438,7 @@
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-              <lit-tag v="ind"/>
+              <var n="definiteness"/>
               <clip pos="1" side="tl" part="a_cas"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
@@ -621,6 +607,36 @@
         </out>      
       </action>
     </rule>
+
+
+    <rule comment="REGLA: vbolla">
+      <pattern>
+         <pattern-item n="vbolla"/>
+        <pattern-item n="infma-ine"/>
+      </pattern>
+      <action>
+        <call-macro n="mood-handler1"> 
+          <with-param pos="1"/>
+        </call-macro>
+        <out> 
+          <chunk name="cop" case="caseFirstWord">
+            <tags>
+                <tag><lit-tag v="SV.COP"/></tag>
+                <tag><clip pos="1" part="moodtense" side="sl"/></tag>
+            </tags>
+          <lu>
+            <clip pos="2" side="tl" part="lem"/> <!-- know --> 
+            <clip pos="2" side="tl" part="a_verb"/> <!-- vblex -->
+            <clip pos="1" side="tl" part="moodtense"/> <!-- pres -->
+            <clip pos="1" side="tl" part="voice"/> <!-- vblex -->
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+          </chunk>
+        </out>      
+      </action>
+    </rule>
+
+
 
     <rule comment="REGLA: infma-ine">
       <pattern>

@@ -8,6 +8,7 @@
     <sdef n="prn"  c="Местоимение"/>
     <sdef n="adj"  c="Прилагательное"/>
     <sdef n="vblex"  c="Глагол"/>
+    <sdef n="vbhaver"  c="Глагол"/>
     <sdef n="enc"  c=""/>
     <sdef n="ij"  c=""/>
     <sdef n="adv"  c="Наречие"/>
@@ -274,7 +275,7 @@
     <e><p><l>pitää<s n="vblex"/></l><r>tycka<s n="vblex"/></r></p></e>
     <e><p><l>puhua<s n="vblex"/></l><r>tala<s n="vblex"/></r></p></e>
     <e><p><l>pystyä<s n="vblex"/></l><r>kunna<s n="vbmod"/></r></p></e>
-    <e><p><l>saada<s n="vblex"/></l><r>ha<s n="vblex"/></r></p></e>
+    <e><p><l>saada<s n="vblex"/></l><r>ha<s n="vbhaver"/></r></p></e>
     <e><p><l>sanoa<s n="vblex"/></l><r>säga<s n="vblex"/></r></p></e>
     <e><p><l>syödä<s n="vblex"/></l><r>äta<s n="vblex"/></r></p></e>
     <e><p><l>tehdä<s n="vblex"/></l><r>göra<s n="vblex"/></r></p></e>

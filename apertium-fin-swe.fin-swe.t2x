@@ -291,7 +291,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vblex.pres"/>
+            <lit-tag v="vbhaver.pres.actv"/>
             <lit v="$}"/>
             </chunk>
           <var n="NOT"/>
@@ -339,7 +339,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vblex.pres"/>
+            <lit-tag v="vbhaver.pres.actv"/>
             <lit v="$}"/>
           </chunk>
           <var n="NOT"/>
@@ -387,7 +387,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vblex.pres"/>
+            <lit-tag v="vbhaver.pres.actv"/>
             <lit v="$}"/>
           </chunk>
           <var n="NOT"/>
