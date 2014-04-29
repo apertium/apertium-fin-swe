@@ -75,6 +75,9 @@
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
     </def-cat>
+    <def-cat n="prn">
+      <cat-item tags="prn.*"/>
+    </def-cat>
     <def-cat n="verb-mood">
       <cat-item tags="vblex.*.cond.*"/>
       <cat-item tags="vblex.*.imp.*"/>
@@ -147,6 +150,7 @@
     </def-attr>
     <def-attr n="a_prn">
       <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.dem"/>
     </def-attr>
     <def-attr n="a_num">
       <attr-item tags="num"/>
@@ -257,6 +261,18 @@
  
     <def-macro n="proc-synlabel1" npar="1">
           <let><clip pos="1" side="tl" part="synfunc"/><lit v=""/></let>
+    </def-macro>
+
+    <def-macro n="proc-synlabel3" npar="3">
+        <call-macro n="proc-synlabel1"> 
+          <with-param pos="1"/>
+        </call-macro> 
+        <call-macro n="proc-synlabel1"> 
+          <with-param pos="2"/>
+        </call-macro> 
+        <call-macro n="proc-synlabel1"> 
+          <with-param pos="3"/>
+        </call-macro> 
     </def-macro>
 
     <def-macro n="def-handler1" npar="1">
@@ -446,6 +462,54 @@
         </out>
       </action>
     </rule>
+
+  <rule comment="REGLA: prn adj nom">
+      <pattern>
+	<pattern-item n="prn"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="case-handler1"> 
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="proc-synlabel3"> 
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="p_j_n" case="caseFirstWord">
+            <tags>
+              <tag><var n="sntype"/></tag>
+              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+            </tags>
+	    <lu>
+	      <clip pos="1" side="tl" part="lemh"/>
+	      <clip pos="1" side="tl" part="a_prn"/>
+	      <clip pos="1" side="tl" part="lemq"/>
+	    </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_adj"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="3" side="tl" part="a_cas"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: adj">
       <pattern>
