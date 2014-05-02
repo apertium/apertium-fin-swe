@@ -111,6 +111,7 @@
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
       <attr-item tags="vbser"/>
+      <attr-item tags="vbhaver"/>
       <attr-item tags="vbmod"/>
       <attr-item tags="vaux"/>
     </def-attr>
@@ -132,6 +133,7 @@
     </def-attr>
     <def-attr n="a_adv">
         <attr-item tags="adv"/>
+        <attr-item tags="adv.pst"/>
         <attr-item tags="adv.itg"/>
     </def-attr>
     <def-attr n="a_nom">
@@ -144,9 +146,14 @@
       <attr-item tags="np.ant.f"/>
       <attr-item tags="np.ant.m"/>
     </def-attr>
+    <def-attr n="a_gender">
+      <attr-item tags="nt"/>
+      <attr-item tags="ut"/>
+    </def-attr>
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
       <attr-item tags="adj.sint"/>
+      <attr-item tags="adj.pst"/>
     </def-attr>
     <def-attr n="a_prn">
       <attr-item tags="prn.pers"/>
@@ -154,6 +161,9 @@
     </def-attr>
     <def-attr n="a_num">
       <attr-item tags="num"/>
+      <attr-item tags="num.un"/>
+      <attr-item tags="num.un.sg"/>
+      <attr-item tags="num.un.pl"/>
     </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sp"/>
@@ -463,6 +473,58 @@
       </action>
     </rule>
 
+  <rule comment="REGLA: adj adj nom">
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="case-handler1"> 
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="proc-synlabel3"> 
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="p_j_n" case="caseFirstWord">
+            <tags>
+              <tag><var n="sntype"/></tag>
+              <tag><clip pos="3" side="sl" part="a_cas"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_adj"/>
+              <clip pos="3" side="tl" part="a_gender"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_adj"/>
+              <clip pos="3" side="tl" part="a_gender"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_nom"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="3" side="tl" part="a_cas"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+
+          </chunk>
+        </out>
+      </action>
+    </rule>
   <rule comment="REGLA: prn adj nom">
       <pattern>
 	<pattern-item n="prn"/>
@@ -493,6 +555,9 @@
             <lu>
               <clip pos="2" side="tl" part="lemh"/>
               <clip pos="2" side="tl" part="a_adj"/>
+              <clip pos="3" side="tl" part="a_gender"/>
+              <clip pos="3" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
               <clip pos="2" side="tl" part="lemq"/>
             </lu>
             <b pos="2"/>
@@ -527,8 +592,9 @@
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_adj"/>
+              <lit-tag v="ut"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-              <lit-tag v="ind.ut"/>
+              <lit-tag v="ind"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
@@ -559,6 +625,9 @@
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_adj"/>
+              <clip pos="4" side="tl" part="a_gender"/>
+              <clip pos="4" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
@@ -569,6 +638,9 @@
             <lu>
               <clip pos="3" side="tl" part="lemh"/>
               <clip pos="3" side="tl" part="a_adj"/>
+              <clip pos="4" side="tl" part="a_gender"/>
+              <clip pos="4" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
               <clip pos="3" side="tl" part="lemq"/>
             </lu>
             <b pos="3"/>
@@ -605,6 +677,9 @@
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_adj"/>
+              <clip pos="2" side="tl" part="a_gender"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
             <b pos="1"/>
@@ -735,7 +810,7 @@
             </tags>
             <lu>
                 <clip pos="1" side="tl" part="lem"/>
-                <lit-tag v="vblex.inf"/>
+                <lit-tag v="vblex.inf.actv"/>
             </lu>
           </chunk>
         </out>      
@@ -790,7 +865,7 @@
           <b pos="2"/>
             <lu>
                 <clip pos="3" side="tl" part="lem"/>
-                <lit-tag v="vblex.inf"/>
+                <lit-tag v="vblex.inf.actv"/>
             </lu>
           </chunk>
         </out>      
@@ -948,6 +1023,7 @@
               <clip pos="2" side="tl" part="lem"/>
               <clip pos="2" side="tl" part="a_verb"/>
               <lit-tag v="pres"/>
+            <clip pos="2" side="tl" part="voice"/> <!-- vblex -->
             </lu>
             <b pos="1"/>
             <lu>
@@ -1119,14 +1195,6 @@
         <call-macro n="case-handler1"> 
           <with-param pos="2"/>
         </call-macro>
-        <choose>
-          <when>
-            <test><not>
-              <equal><clip pos="1" side="tl" part="lem"/><lit v="one"/></equal></not>
-            </test>
-            <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
-          </when>
-        </choose>
         <out>
           <chunk name="num" case="caseFirstWord">
             <tags>
@@ -1136,7 +1204,6 @@
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_num"/>
             </lu>
-            <b pos="0"/>
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="lem"/>
@@ -1245,9 +1312,10 @@
           </lu>
           <b pos="1"/>
             <lu>
-                <lit v="måste"/>
+                <lit v="måsta"/>
                 <lit-tag v="vaux"/>
                 <clip pos="2" side="tl" part="moodtense"/>
+                <clip pos="2" side="tl" part="voice"/>
             </lu>
           </chunk>
         </out>
@@ -1267,14 +1335,24 @@
         <out>
           <chunk name="REALGEN" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="NP-NEC"/></tag>
+              <tag><lit-tag v="NP-GEN"/></tag>
             </tags>
             <lu>
-                <clip pos="1" side="tl" part="whole"/>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="1" side="tl" part="a_cas"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
                 <b pos="1"/>
             <lu>
-                <clip pos="2" side="tl" part="whole"/>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_nom"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+              <lit-tag v="ind"/>
+              <clip pos="2" side="tl" part="a_cas"/>
+              <clip pos="2" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
