@@ -3,6 +3,7 @@
 /COPYING -text
 /ChangeLog -text
 /Makefile.am -text
+/MkFinSwe.py -text
 /NEWS -text
 /README -text
 /TODO -text
