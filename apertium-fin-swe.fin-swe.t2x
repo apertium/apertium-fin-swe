@@ -219,7 +219,7 @@
         <when>
           <test><equal><clip pos="1" part="a_prs"/><lit-tag v="p2.sg"/></equal></test>
           <let><var n="PRS"/>
-               <concat><lit v="^prs"/><lit-tag v="PRS"/><lit v="{^du"/><lit-tag v="prn.pers.p2.un.sg.nom"/><lit v="$}$ "/></concat>
+               <concat><lit v="^prs"/><lit-tag v="PRS"/><lit v="{^du"/><lit-tag v="prn.pers.p2.ut.sg.nom"/><lit v="$}$ "/></concat>
           </let>
         </when>
         <when>
@@ -257,7 +257,7 @@
         <when>
           <test><equal><clip pos="1" part="a_mood"/><lit-tag v="imp"/></equal></test>
           <let><var n="AUX"/>
-               <concat><lit v="^mood"/><lit-tag v="MOOD"/><lit v="{^skola"/><lit-tag v="vbmod.past"/><lit v="$}$ "/></concat>
+               <concat><lit v="^mood"/><lit-tag v="MOOD"/><lit v="{^skola¹"/><lit-tag v="vblex.past.actv"/><lit v="$}$ "/></concat>
           </let>
         </when>
         <when>
@@ -291,7 +291,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vbhaver.pres.actv"/>
+            <lit-tag v="vblex.pres.actv"/>
             <lit v="$}"/>
             </chunk>
           <var n="NOT"/>
@@ -339,7 +339,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vbhaver.pres.actv"/>
+            <lit-tag v="vblex.pres.actv"/>
             <lit v="$}"/>
           </chunk>
           <var n="NOT"/>
@@ -387,7 +387,7 @@
             <lit v="ha"/>
             <lit-tag v="V.HAB"/>
             <lit v="{^ha"/>
-            <lit-tag v="vbhaver.pres.actv"/>
+            <lit-tag v="vblex.pres.actv"/>
             <lit v="$}"/>
           </chunk>
           <var n="NOT"/>
