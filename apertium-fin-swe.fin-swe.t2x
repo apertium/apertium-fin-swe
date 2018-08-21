@@ -433,10 +433,10 @@
       <action>
         <call-macro n="insert-prep1">
           <with-param pos="1"/>
-        </call-macro> 
+        </call-macro>
         <call-macro n="insert-poss1">
           <with-param pos="1"/>
-        </call-macro> 
+        </call-macro>
         <out>
           <var n="PREP"/>
           <var n="POSS"/>
@@ -448,7 +448,7 @@
         </out>
       </action>
     </rule>
-    
+
     <rule comment="REGLA: SV">
       <pattern>
         <pattern-item n="SV"/>
@@ -456,10 +456,10 @@
       <action>
         <call-macro n="insert-prs1">
           <with-param pos="1"/>
-        </call-macro> 
+        </call-macro>
         <call-macro n="insert-aux1">
           <with-param pos="1"/>
-        </call-macro> 
+        </call-macro>
         <out>
           <var n="PRS"/>
           <var n="AUX"/>
