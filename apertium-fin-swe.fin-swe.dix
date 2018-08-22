@@ -39,6 +39,8 @@
     <sdef n="apos" 	c=""/>
     <sdef n="itg" 	c="kysymys"/>
     <sdef n="ant" 	c="muurahainen"/>
+    <sdef n="cog"/>
+    <sdef n="al"/>
     <sdef n="p3" 	c="charmed"/>
     <sdef n="p1" 	c="charmed"/>
     <sdef n="pers" 	c="e"/>
@@ -49,6 +51,7 @@
     <sdef n="mf" 	c="ei oo nin väliks"/>
     <sdef n="CLB" 	c="CG hack"/>
     <sdef n="abbr" 	c="eviation"/>
+    <sdef n="acr" 	c="eviation"/>
     <sdef n="nt"    c="gender N"/>
     <sdef n="ut"    c="gender U"/>
     <sdef n="ref"    c="reference"/>
@@ -61,6 +64,7 @@
     <sdef n="sym"/>
     <sdef n="qnt"/>
     <sdef n="gen"/>
+    <sdef n="neg"/>
     <sdef n="pos"/>
 
   </sdefs>
@@ -82,8 +86,8 @@
     <e><p><l>Jumala<s n="np"/></l><r>Gud<s n="np"/></r></p></e>
     <e><p><l>Tukholma<s n="np"/></l><r>Stockholm<s n="np"/><s n="top"/></r></p></e>
 
+    <e><p><l>de<s n="np"/><s n="cog"/></l><r>de<s n="np"/><s n="al"/></r></p></e>
     <e><i>Van<s n="np"/></i></e>
-    <e><i>de<s n="np"/></i></e>
     <e><i>den<s n="np"/></i></e>
     <e><i>Acapulco<s n="np"/></i></e>
     <e><i>Acer<s n="np"/></i></e>
@@ -414,7 +418,7 @@
     <e><p><l>investointi<s n="n"/></l><r>investering<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>irtisanoutuminen<s n="n"/></l><r>underkastelse<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>isku<s n="n"/></l><r>takt<s n="n"/><s n="ut"/></r></p></e>
-    <e><p><l>i<s n="n"/></l><r>i<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>i<s n="n"/><s n="acr"/></l><r>i<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>istuja<s n="n"/></l><r>sitter<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>istunto<s n="n"/></l><r>session<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>isä<s n="n"/></l><r>far<s n="n"/><s n="ut"/></r></p></e>
@@ -731,7 +735,7 @@
     <e><p><l>ministeri<s n="n"/></l><r>pastor<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>ministeriö<s n="n"/></l><r>departement<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>minuutti<s n="n"/></l><r>minut<s n="n"/><s n="ut"/></r></p></e>
-    <e><p><l>minä<s n="n"/></l><r>jag<s n="n"/><s n="nt"/></r></p></e>
+    <e><p><l>minuus<s n="n"/></l><r>jag<s n="n"/><s n="nt"/></r></p></e>
     <e><p><l>mokkasiini<s n="n"/></l><r>dagdrivare<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>motiivi<s n="n"/></l><r>skäl<s n="n"/><s n="ut"/></r></p></e>
     <e><p><l>mukaanotto<s n="n"/></l><r>inbegripande<s n="n"/><s n="ut"/></r></p></e>
@@ -1284,7 +1288,8 @@
 
     <!-- auxiliaries = in Finnish verbs with infinitive complement -->
 
-    <e><p><l>ei<s n="vaux"/></l><r>inte<s n="adv"/></r></p></e>
+    <e><p><l>ei<s n="vaux"/><s n="neg"/></l><r>nej<s n="adv"/></r></p></e>
+    <e><p><l>ei<s n="vaux"/><s n="neg"/></l><r>inte<s n="adv"/></r></p></e>
     <e><p><l>täytyä<s n="vaux"/></l><r>mäste<s n="vaux"/></r></p></e>
     <e><p><l>voida<s n="vaux"/></l><r>kunna<s n="vblex"/></r></p></e>
     <e><p><l>osata<s n="vaux"/></l><r>kunna<s n="vblex"/></r></p></e>
@@ -1303,7 +1308,6 @@
     <e><p><l>yrittää<s n="vblex"/></l><r>försöka<s n="vblex"/></r></p></e>
     <e><p><l>löytää<s n="vblex"/></l><r>hitta<s n="vblex"/></r></p></e>
     <e><p><l>ajatella<s n="vblex"/></l><r>tänka<s n="vblex"/></r></p></e>
-    <e><p><l>ei<s n="vblex"/></l><r>inte<s n="adv"/></r></p></e>
     <e><p><l>etsiä<s n="vblex"/></l><r>söka<s n="vblex"/></r></p></e>
     <e><p><l>haluta<s n="vblex"/></l><r>vilja<s n="vaux"/></r></p></e>
     <e><p><l>istua<s n="vblex"/></l><r>sitta<s n="vblex"/></r></p></e>
@@ -1767,7 +1771,7 @@
     <!-- }}}
          {{{ conjunctions -->
 
-    <e><p><l>vaikka<s n="cnjadv"/></l><r>även<b/>om<s n="cnjadv"/></r></p></e>
+    <e><p><l>vaikka<s n="cnjsub"/></l><r>även<b/>om<s n="cnjadv"/></r></p></e>
     <e><p><l>eli<s n="cnjcoo"/></l><r>därför<s n="cnjcoo"/></r></p></e>
     <e><p><l>että<s n="cnjsub"/></l><r>att<s n="cnjsub"/></r></p></e>
     <e><p><l>jahka<s n="cnjcoo"/></l><r>till<s n="cnjcoo"/></r></p></e>
@@ -1809,7 +1813,6 @@
     <e><p><l>ehkä<s n="adv"/></l><r>kanske<s n="adv"/></r></p></e>
     <e><p><l>eilen<s n="adv"/></l><r>i<b/>går<s n="adv"/></r></p></e>
     <e><p><l>eilen<s n="adv"/></l><r>igår<s n="adv"/></r></p></e>
-    <e><p><l>ei<s n="adv"/></l><r>nej<s n="adv"/></r></p></e>
     <e><p><l>ennen<s n="adv"/></l><r>innan<s n="adv"/></r></p></e>
     <e><p><l>ensimmäisenä<s n="adv"/></l><r>först<s n="adv"/></r></p></e>
     <e><p><l>entä<s n="adv"/></l><r>och<s n="cnjcoo"/></r></p></e>
