@@ -2,12 +2,19 @@
 <!-- -*- nxml -*- -->
 <transfer default="chunk">
   <section-def-cats>
+    <def-cat n="båda-n">
+      <cat-item tags="n.ut.*" lemma="båda"/>
+    </def-cat>
     <def-cat n="noun">
       <cat-item tags="n.*"/>
     </def-cat>
     <def-cat n="verb">
       <cat-item tags="vblex.*"/>
       <cat-item tags="vaux.*"/>
+    </def-cat>
+    <def-cat n="inf">
+      <cat-item tags="vblex.inf.*"/>
+      <cat-item tags="vblex.supn.*"/> <!-- XXX: for now -->
     </def-cat>
     <def-cat n="np">
       <cat-item tags="np.*"/>
@@ -150,6 +157,44 @@
   </section-def-macros>
   <section-rules>
 
+    <rule comment="Broken words: båda.n -> molemmat.prn">
+      <pattern>
+        <pattern-item n="båda-n"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="PrnP">
+            <tags>
+              <tag><lit-tag v="PRN.BOTH"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>    <!-- molrmmat -->
+              <lit-tag v="prn.pl.nom"/>               <!-- prn.pl.nom -->
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="Single infinitive fallback: infa sg lat">
+      <pattern>
+        <pattern-item n="inf"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="VP">
+            <tags>
+              <tag><lit-tag v="V"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>    <!-- juosta -->
+              <clip pos="1" side="tl" part="a_verb"/> <!--  vblex -->
+              <lit-tag v="actv.infa.sg.lat"/>                     <!-- actv -->
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="Single verb fallback: ">
       <pattern>
         <pattern-item n="verb"/>

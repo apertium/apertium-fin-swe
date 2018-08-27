@@ -1521,7 +1521,6 @@
     <e><p><l>monimutkainen<s n="adj"/></l><r>komplex<s n="adj"/><s n="pst"/></r></p></e>
     <e><p><l>mukava<s n="adj"/></l><r>bekväm<s n="adj"/><s n="pst"/></r></p></e>
     <e><p><l>mukava<s n="adj"/></l><r>trevlig<s n="adj"/><s n="pst"/></r></p></e>
-    <e><p><l>muu<s n="adj"/></l><r>annan<s n="det"/><s n="dem"/></r></p></e>
     <e><p><l>muuttumaton<s n="adj"/></l><r>oförändrad<s n="adj"/><s n="pst"/></r></p></e>
     <e><p><l>mykistävä<s n="adj"/></l><r>fantastisk<s n="adj"/><s n="pst"/></r></p></e>
     <e><p><l>myöhäinen<s n="adj"/></l><r>sen<s n="adj"/><s n="pst"/></r></p></e>
@@ -1681,6 +1680,7 @@
     <e><p><l>yönkestävä<s n="adj"/></l><r>nattlig<s n="adj"/><s n="pst"/></r></p></e>
     <e><p><l>äärimmäinen<s n="adj"/></l><r>utomordentlig<s n="adj"/><s n="pst"/></r></p></e>
 
+    <e r="LR"><p><l>muu<s n="adj"/></l><r>annan<s n="det"/><s n="dem"/></r></p></e>
 
     <!-- }}}
          {{{ adpositions -->
@@ -1786,7 +1786,6 @@
     <e><p><l>mut<s n="cnjcoo"/></l><r>men<s n="cnjcoo"/></r></p></e>
     <e><p><l>mutta<s n="cnjcoo"/></l><r>men<s n="cnjcoo"/></r></p></e>
     <e><p><l>sekä<s n="cnjcoo"/></l><r>och<s n="cnjcoo"/></r></p></e>
-    <e><p><l>tahi<s n="cnjcoo"/></l><r>eller<s n="cnjcoo"/></r></p></e>
     <e><p><l>taikka<s n="cnjcoo"/></l><r>eller<s n="cnjcoo"/></r></p></e>
     <e><p><l>tai<s n="cnjcoo"/></l><r>eller<s n="cnjcoo"/></r></p></e>
     <e><p><l>vai<s n="cnjcoo"/></l><r>eller<s n="cnjcoo"/></r></p></e>
@@ -1809,7 +1808,7 @@
     <e><p><l>alle<s n="adv"/></l><r>under<s n="adv"/></r></p></e>
     <e><p><l>edelleen<s n="adv"/></l><r>framåt<s n="adv"/></r></p></e>
     <e><p><l>edessä<s n="adv"/></l><r>före<s n="adv"/></r></p></e>
-    <e><p><l>editse<s n="adv"/></l><r>framför<s n="adv"/></r></p></e>
+    <e><p><l>edessä<s n="adv"/></l><r>framför<s n="adv"/></r></p></e>
     <e><p><l>ehkä<s n="adv"/></l><r>kanske<s n="adv"/></r></p></e>
     <e><p><l>eilen<s n="adv"/></l><r>i<b/>går<s n="adv"/></r></p></e>
     <e><p><l>eilen<s n="adv"/></l><r>igår<s n="adv"/></r></p></e>
@@ -1822,8 +1821,8 @@
     <e><p><l>esimerkiksi<s n="adv"/></l><r>exempelvis<s n="adv"/></r></p></e>
     <e><p><l>etelään<s n="adv"/></l><r>söderut<s n="adv"/></r></p></e>
     <e><p><l>helposti<s n="adv"/></l><r>lätt<s n="adv"/></r></p></e>
-    <e><p><l>hitaasti<s n="adv"/></l><r>sakna<s n="adv"/></r></p></e>
-    <e><p><l>hitaasti<s n="adv"/></l><r>sakta<s n="adv"/></r></p></e>
+    <e><p><l>hitaasti<s n="adv"/></l><r>sakna<s n="adv"/><s n="pst"/></r></p></e>
+    <e><p><l>hitaasti<s n="adv"/></l><r>sakta<s n="adv"/><s n="pst"/></r></p></e>
     <e><p><l>hukassa<s n="adv"/></l><r>vill<s n="adv"/></r></p></e>
     <e><p><l>huolellisesti<s n="adv"/></l><r>försiktigt<s n="adv"/></r></p></e>
     <e><p><l>huolimatta<s n="adv"/></l><r>likväl<s n="adv"/></r></p></e>
@@ -2029,6 +2028,7 @@
     <e><p><l>jokin<s n="prn"/></l><r>någonting<s n="prn"/><s n="ind"/><s n="ut"/></r></p></e>
     <e><p><l>kaikki<s n="prn"/></l><r>alla<s n="prn"/></r></p></e>
     <e><p><l>molemmat<s n="prn"/></l><r>båda<s n="prn"/><s n="def"/><s n="un"/></r></p></e>
+    <e><p><l>muu<s n="prn"/></l><r>annan<s n="prn"/><s n="ind"/><s n="ut"/></r></p></e>
     <e><p><l>muu<s n="prn"/></l><r>andra<s n="prn"/><s n="ind"/><s n="un"/></r></p></e>
     <e><p><l>joku<s n="prn"/></l><r>någon<s n="prn"/></r></p></e>
     <e><p><l>kukaan<s n="prn"/></l><r>ingen<s n="prn"/></r></p></e>
@@ -2075,7 +2075,7 @@
     <!-- poss -->
 
     <e><p><l>hän<s n="prn"/><s n="sg"/><s n="gen"/></l><r>sin<s n="det"/><s n="pos"/><s n="ut"/><s n="sg"/></r></p></e>
-    <e><p><l>he<s n="prn"/><s n="sg"/><s n="gen"/></l><r>hennes<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
+    <e><p><l>he<s n="prn"/><s n="pl"/><s n="gen"/></l><r>hennes<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
     <e><p><l>he<s n="prn"/><s n="pl"/><s n="gen"/></l><r>hans<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
     <e><p><l>he<s n="prn"/><s n="pl"/><s n="gen"/></l><r>deras<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
 
@@ -2089,7 +2089,8 @@
 
     <!-- rest -->
 
-    <e><p><l>jotain<s n="prn"/></l><r>någonting<s n="prn"/><s n="ind"/><s n="un"/></r></p></e>
+    <e><p><l>jokin<s n="prn"/></l><r>någonting<s n="prn"/><s n="ind"/><s n="un"/></r></p></e>
+    <e><p><l>muu<s n="prn"/></l><r>annan<s n="det"/><s n="dem"/><s n="nt"/></r></p></e>
     <e><p><l>mikään<s n="prn"/></l><r>ingen<s n="det"/><s n="qnt"/><s n="ut"/></r></p></e>
     <e><p><l>jokin<s n="prn"/></l><r>någon<s n="det"/><s n="qnt"/><s n="ut"/></r></p></e>
     <e><p><l>mikään<s n="prn"/></l><r>ingen<s n="det"/><s n="qnt"/><s n="nt"/></r></p></e>
