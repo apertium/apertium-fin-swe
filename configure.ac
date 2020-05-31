@@ -1,13 +1,12 @@
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-fin-swe], [0.0.0], [flammie@iki.fi])
+AC_INIT([apertium-fin-swe], [0.1.0], [flammie@iki.fi])
 AM_INIT_AUTOMAKE
 AC_PROG_LN_S
 AC_PROG_AWK
 
 m4_define([required_apertium_version], [3.2.0])
 PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium-3.2 >= required_apertium_version)])
-                          
 
 AC_PATH_PROG([LTPRINT], [lt-print], [no])
 AS_IF([test x$ac_cv_path_LTPRINT = x], 
@@ -32,5 +31,6 @@ m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertiu
 AP_CHECK_LING([1], [apertium-fin])
 AP_CHECK_LING([2], [apertium-swe])
 
-AC_OUTPUT([Makefile])
+AP_MKINCLUDE
 
+AC_OUTPUT([Makefile])
