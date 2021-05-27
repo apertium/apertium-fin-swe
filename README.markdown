@@ -21,7 +21,7 @@ You will need the following software installed:
 * apertium-fin
 * apertium-swe
 
-If this does not make any sense, we recommend you look at: www.apertium.org
+If this does not make any sense, we recommend you look at: apertium.org
 
 ## Compiling
 
