@@ -62,16 +62,16 @@ yksi talo
 
 ## For more information
 
-* http://wiki.apertium.org/wiki/Installation
-* http://wiki.apertium.org/wiki/apertium-fin-swe
-* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+* https://wiki.apertium.org/wiki/Installation
+* https://wiki.apertium.org/wiki/apertium-fin-swe
+* https://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
 
 ## Help and support
 
 If you need help using this language pair or data, you can contact:
 
 * Mailing list: apertium-stuff@lists.sourceforge.net
-* IRC: `#apertium` on `irc.freenode.net`
+* IRC: `#apertium` on `irc.oftc.net`
 
 See also the file AUTHORS included in this distribution.
 
