@@ -1,0 +1,10 @@
+[EjtjsAfQwbwA#0] ^n<nom>{^@yö<n><sg><ind>$}$
+[/EjtjsAfQwbwA]
+[Gxax31OLoS3D#0] ^n<nom>{^@n<n><sg><ind>$}$
+[/Gxax31OLoS3D]
+[LNeacgJjrTIz#0] ^n<nom>{^@-omaisuus<n><pl><ind>$}$
+[/LNeacgJjrTIz]
+[VVMLijnmMeU8#0] ^n{^@Dębno<np>$}$ ^n<nom><px2sg>{^@la<n><pl><ind>$}$
+[/VVMLijnmMeU8]
+[W2rTJpJN_Okn#0] ^adv<SN>{^@yp.<adv>$}$
+[/W2rTJpJN_Okn]

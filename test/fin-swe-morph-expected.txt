@@ -1,0 +1,10 @@
+[EjtjsAfQwbwA#0] ^yö/yö<n><sg><nom>$
+[/EjtjsAfQwbwA]
+[Gxax31OLoS3D#0] ^n/n<n><acr><sg><nom>$
+[/Gxax31OLoS3D]
+[LNeacgJjrTIz#0] ^omaisuudet/-omaisuus<n><pl><nom>/omaisuus<n><pl><nom>$
+[/LNeacgJjrTIz]
+[VVMLijnmMeU8#0] ^Dębnolasi/Dębno<np><top>+la<n><pl><nom><px2sg>/Dębno<np><top>+la<n><sg><gen><px2sg>/Dębno<np><top>+la<n><sg><nom><px2sg>$
+[/VVMLijnmMeU8]
+[W2rTJpJN_Okn#0] ^yp./yp.<adv><abbr>$
+[/W2rTJpJN_Okn]

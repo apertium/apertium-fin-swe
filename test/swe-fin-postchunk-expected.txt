@@ -1,0 +1,16 @@
+[0DUCxD10owuT#0] ^,<punct>$
+[/0DUCxD10owuT]
+[B-g-P38dIdcs#0] ^"<punct>$
+[/B-g-P38dIdcs]
+[GM-FdPMZlo_M#0] ^*xøtsikrdrmad$
+[/GM-FdPMZlo_M]
+[JS8QyDYQ68oa#0] ^*f$
+[/JS8QyDYQ68oa]
+[abC_r29RPf2f#0] ^*äurmrrl$
+[/abC_r29RPf2f]
+[poEKQq2qTVXt#0] ^"<punct>$
+[/poEKQq2qTVXt]
+[u3IIvJtdfATx#0] ^!<punct>$
+[/u3IIvJtdfATx]
+[ul7FHQekrA6V#0] ^)<punct>$
+[/ul7FHQekrA6V]

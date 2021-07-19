@@ -1,0 +1,16 @@
+[0DUCxD10owuT#0] ^default<default>{^,<punct>$}$
+[/0DUCxD10owuT]
+[B-g-P38dIdcs#0] ^default<default>{^"<punct>$}$
+[/B-g-P38dIdcs]
+[GM-FdPMZlo_M#0] ^unknown<unknown>{^*xøtsikrdrmad$}$
+[/GM-FdPMZlo_M]
+[JS8QyDYQ68oa#0] ^unknown<unknown>{^*f$}$
+[/JS8QyDYQ68oa]
+[abC_r29RPf2f#0] ^unknown<unknown>{^*äurmrrl$}$
+[/abC_r29RPf2f]
+[poEKQq2qTVXt#0] ^default<default>{^"<punct>$}$
+[/poEKQq2qTVXt]
+[u3IIvJtdfATx#0] ^sent<SENT>{^!<punct>$}$
+[/u3IIvJtdfATx]
+[ul7FHQekrA6V#0] ^default<default>{^)<punct>$}$
+[/ul7FHQekrA6V]

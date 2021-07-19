@@ -1,0 +1,10 @@
+{
+    "fin-swe": {
+        "input": "fin-swe-input.txt",
+        "mode": "fin-swe"
+    },
+    "swe-fin": {
+        "input": "swe-fin-input.txt",
+        "mode": "swe-fin"
+    }
+}
